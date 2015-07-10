@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ircamApp">
+  <head>
+    <title>Ircam</title>
+    <!-- SCRIPTS START HERE-->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.min.js"></script>
+    <script src="//code.angularjs.org/1.4.1/angular-animate.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular-sanitize.js"></script>
+    <script src="js/angular-smooth-scroll.min.js"></script>
+    <script src="js/ircam.js" type="text/javascript"></script>
+    <!-- STYLES START HERE-->
+    <link rel="stylesheet" type="text/css" href="styles/sass.css">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="icons/favicon.ico">
+  </head>
+
+  <body class="{{ bodyClass}}" ng-cloak ng-controller="ircamController">
+
+    <div class="continent {{ continent.name | dashlower }}" ng-repeat="continent in continents">
+
+      <div class="header" ng-click="showCountries = !showCountries" scroll-to="{{ continent.name | dashlower }}" duration="400" easing="easeInOutCubic" offset="160">
+        <img ng-src="icons/{{continent.icon_image}}" class="icon"> 
+        <span class="continent-name">{{ continent.name }}</span>
+        <span class="continent-total">{{ continent.totalCountries }}</span>
+      </div>
+
+      <div class="countries slide" ng-show="showCountries" id="{{ continent.name | dashlower}}" >
+        <div class="row" ng-repeat="group in continent.countriesGrouped">
+          <div class="country-container" ng-repeat="country in group" id="{{ country.name | dashlower }}">
+            <div class="country-name"><span class="name" ng-bind-html="country.name"></span></div>
+            <p class="info" ng-show="{{ country.member_count }}">
+              <span class="count"> {{ country.member_count }}</span>
+              <span class="category">member</span></p>
+            <p class="info" ng-show="{{ country.premium_count }}">
+              <span class="count"> {{ country.premium_count }}</span>
+              <span class="category">premium</span>
+            </p>
+            <p class="info" ng-show="{{ country.institution_count }}">
+              <span class="count"> {{ country.institution_count }}</span>
+              <span class="category">institution</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

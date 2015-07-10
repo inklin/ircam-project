@@ -1,0 +1,416 @@
+[
+{
+  "name": "Europe",
+  "icon_image": "icon_europe.png",
+  "countries": [
+  { 
+    "name": "France",
+    "member_count": "280", 
+    "premium_count": "84", 
+    "institution_count": "14"
+  },
+  { 
+    "name": "United Kingdom",
+    "member_count": "87", 
+    "premium_count": "15", 
+    "institution_count": "6"
+  },
+  { 
+    "name": "Germany",
+    "member_count": "55", 
+    "premium_count": "17", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Italy",
+    "member_count": "19", 
+    "premium_count": "2", 
+    "institution_count": "4"
+  },
+  { 
+    "name": "Norway",
+    "member_count": "18", 
+    "premium_count": "3", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Switzerland",
+    "member_count": "15", 
+    "premium_count": "2", 
+    "institution_count": "3"
+  },
+  { 
+    "name": "Finland",
+    "member_count": "14", 
+    "premium_count": "4", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Netherlands",
+    "member_count": "14", 
+    "premium_count": "1", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Russian Federation",
+    "member_count": "12", 
+    "premium_count": "6", 
+    "institution_count": "0"
+  },
+    { 
+    "name": "Belgium",
+    "member_count": "11", 
+    "premium_count": "2", 
+    "institution_count": "1"
+  },
+  { 
+    "name": "Sweden",
+    "member_count": "10", 
+    "premium_count": "1", 
+    "institution_count": "3"
+  },
+  { 
+    "name": "Spain",
+    "member_count": "10", 
+    "premium_count": "3", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Greece",
+    "member_count": "9", 
+    "premium_count": "1", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Austria",
+    "member_count": "9", 
+    "premium_count": "3", 
+    "institution_count": "2"
+  },
+  { 
+    "name": "Portugal",
+    "member_count": "6", 
+    "premium_count": "1", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Denmark",
+    "member_count": "5", 
+    "premium_count": "1", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Poland",
+    "member_count": "4", 
+    "premium_count": "1", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Ireland",
+    "member_count": "4", 
+    "premium_count": "3", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Luxemburg",
+    "member_count": "4", 
+    "premium_count": "3", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Romania",
+    "member_count": "3", 
+    "premium_count": "0", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Latvia",
+    "member_count": "3", 
+    "premium_count": "0", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Czech Republic",
+    "member_count": "3", 
+    "premium_count": "0", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Estonia",
+    "member_count": "3", 
+    "premium_count": "0", 
+    "institution_count": "2"
+  },
+  { 
+    "name": "Lithuania",
+    "member_count": "2", 
+    "premium_count": "0", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Bulgaria",
+    "member_count": "2", 
+    "premium_count": "0", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Ukraine",
+    "member_count": "1", 
+    "premium_count": "0", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Slovenia",
+    "member_count": "1", 
+    "premium_count": "0", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Iceland",
+    "member_count": "1", 
+    "premium_count": "1", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Hungary",
+    "member_count": "1", 
+    "premium_count": "0", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Croatia",
+    "member_count": "1", 
+    "premium_count": "0", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Serbia",
+    "member_count": "1", 
+    "premium_count": "1", 
+    "institution_count": "0"
+  }
+  ]
+},
+{
+  "name": "Asia",
+  "icon_image": "icon_asia.png",
+  "countries": [
+  { 
+    "name": "South Korea",
+    "member_count": "59", 
+    "premium_count": "44", 
+    "institution_count": "0"
+  }, 
+  { 
+    "name": "Japan",
+    "member_count": "22", 
+    "premium_count": "13", 
+    "institution_count": "1"
+  },
+  { 
+    "name": "China",
+    "member_count": "5", 
+    "premium_count": "2", 
+    "institution_count": "0"
+  }, 
+  { 
+    "name": "Hong Kong",
+    "member_count": "5", 
+    "premium_count": "2", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Turkey",
+    "member_count": "5", 
+    "premium_count": "3", 
+    "institution_count": "0"
+  }, 
+  { 
+    "name": "Taiwan",
+    "member_count": "4", 
+    "premium_count": "4", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Singapore",
+    "member_count": "4", 
+    "premium_count": "2", 
+    "institution_count": "1"
+  }, 
+  { 
+    "name": "United Arab Emirates",
+    "member_count": "3", 
+    "premium_count": "0", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Thailand",
+    "member_count": "1", 
+    "premium_count": "0", 
+    "institution_count": "0"
+  }, 
+  { 
+    "name": "Malaysia",
+    "member_count": "2", 
+    "premium_count": "0", 
+    "institution_count": "0"
+  },
+    { 
+    "name": "Israel",
+    "member_count": "1", 
+    "premium_count": "0", 
+    "institution_count": "0"
+  }, 
+  { 
+    "name": "Cyprus",
+    "member_count": "1", 
+    "premium_count": "0", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "India",
+    "member_count": "1", 
+    "premium_count": "0", 
+    "institution_count": "0"
+  }, 
+  { 
+    "name": "Vietnam",
+    "member_count": "1", 
+    "premium_count": "0", 
+    "institution_count": "0"
+  },
+    { 
+    "name": "Indonesia",
+    "member_count": "1", 
+    "premium_count": "1", 
+    "institution_count": "0"
+  }, 
+  { 
+    "name": "Dem. Republic of Korea",
+    "member_count": "1", 
+    "premium_count": "1", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Philippines",
+    "member_count": "1", 
+    "premium_count": "1", 
+    "institution_count": "0"
+  }
+  ]
+},
+{
+  "name": "South America",
+  "icon_image": "icon_south_america.png",
+  "countries": 
+  [{ 
+    "name": "Brazil",
+    "member_count": "13", 
+    "premium_count": "5", 
+    "institution_count": "0"
+  }, 
+  { 
+    "name": "Chile",
+    "member_count": "6", 
+    "premium_count": "4", 
+    "institution_count": "0"
+  },
+    { 
+    "name": "Columbia",
+    "member_count": "5", 
+    "premium_count": "2", 
+    "institution_count": "0"
+  }, 
+  { 
+    "name": "Argentina",
+    "member_count": "4", 
+    "premium_count": "1", 
+    "institution_count": "0"
+  },
+  { 
+    "name": "Uruguay",
+    "member_count": "1", 
+    "premium_count": "0", 
+    "institution_count": "0"
+  }, 
+  { 
+    "name": "Ecuador",
+    "member_count": "1", 
+    "premium_count": "0", 
+    "institution_count": "0"
+  }
+  ]
+},
+{
+  "name": "North America",
+  "icon_image": "icon_north_america.png",
+  "countries":
+  [{ 
+    "name": "Canada",
+    "member_count": "39", 
+    "premium_count": "5", 
+    "institution_count": "4"
+  }, 
+  { 
+    "name": "United States",
+    "member_count": "24", 
+    "premium_count": "5", 
+    "institution_count": "5"
+  },
+  { 
+    "name": "Mexico",
+    "member_count": "7", 
+    "premium_count": "3", 
+    "institution_count": "0"
+  }, 
+  { 
+    "name": "Puerto Rico",
+    "member_count": "1", 
+    "premium_count": "1", 
+    "institution_count": "0"
+  }
+  ]
+},
+{
+  "name": "Africa",
+  "icon_image": "icon_africa.png",
+  "countries":
+  [  { 
+    "name": "South Africa",
+    "member_count": "4", 
+    "premium_count": "3", 
+    "institution_count": "0"
+  }, 
+  { 
+    "name": "Reunion Island",
+    "member_count": "3", 
+    "premium_count": "2", 
+    "institution_count": "0"
+  },
+    { 
+    "name": "Morocco",
+    "member_count": "1", 
+    "premium_count": "0", 
+    "institution_count": "0"
+  }
+  ]
+},
+{
+  "name": "Oceania",
+  "icon_image": "icon_oceania.png",
+  "countries": 
+  [  { 
+    "name": "Australia",
+    "member_count": "9", 
+    "premium_count": "3", 
+    "institution_count": "1"
+  }, 
+  { 
+    "name": "New Zealand",
+    "member_count": "4", 
+    "premium_count": "0", 
+    "institution_count": "0"
+  }
+  ]
+}
+]
