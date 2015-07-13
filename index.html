@@ -14,31 +14,32 @@
     <link rel="icon" type="image/png" href="icons/favicon.ico">
   </head>
 
-  <body class="{{ bodyClass}}" ng-cloak ng-controller="ircamController">
+  <body class="{{ bodyClass }}" ng-cloak ng-controller="ircamController">
 
     <div class="continent {{ continent.name | dashlower }}" ng-repeat="continent in continents">
-
-      <div class="header" ng-click="showCountries = !showCountries" scroll-to="{{ continent.name | dashlower }}" duration="400" easing="easeInOutCubic" offset="160">
+      <div class="header" scroll-to="{{ continent.name | dashlower }}" duration="400" easing="easeInOutCubic" id="{{ continent.name | dashlower}}" show-countries>
         <img ng-src="icons/{{continent.icon_image}}" class="icon"> 
         <span class="continent-name">{{ continent.name }}</span>
-        <span class="continent-total">{{ continent.totalCountries }}</span>
+        <span class="continent-total">{{ continent.countryCount }}</span>
       </div>
 
-      <div class="countries slide" ng-show="showCountries" id="{{ continent.name | dashlower}}" >
+      <div class="countries slide" ng-show="showCountries" ng-init="showCountries = false">
         <div class="row" ng-repeat="group in continent.countriesGrouped">
-          <div class="country-container" ng-repeat="country in group" id="{{ country.name | dashlower }}">
-            <div class="country-name"><span class="name" ng-bind-html="country.name"></span></div>
-            <p class="info" ng-show="{{ country.member_count }}">
-              <span class="count"> {{ country.member_count }}</span>
-              <span class="category">member</span></p>
-            <p class="info" ng-show="{{ country.premium_count }}">
-              <span class="count"> {{ country.premium_count }}</span>
-              <span class="category">premium</span>
-            </p>
-            <p class="info" ng-show="{{ country.institution_count }}">
-              <span class="count"> {{ country.institution_count }}</span>
-              <span class="category">institution</span>
-            </p>
+          <div class="countries-container">
+            <div class="country-container" ng-repeat="country in group" id="{{ country.name | dashlower }}">
+              <div class="country-name"><span class="name" ng-bind-html="country.name"></span></div>
+              <p class="info" ng-show="{{ country.member_count }}">
+                <span class="count"> {{ country.member_count }}</span>
+                <span class="category">member</span></p>
+              <p class="info" ng-show="{{ country.premium_count }}">
+                <span class="count"> {{ country.premium_count }}</span>
+                <span class="category">premium</span>
+              </p>
+              <p class="info" ng-show="{{ country.institution_count }}">
+                <span class="count"> {{ country.institution_count }}</span>
+                <span class="category">institution</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>

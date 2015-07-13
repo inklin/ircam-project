@@ -25,38 +25,9 @@ body {
   -ms-user-select: none;
 }
 
-/* The starting CSS styles for the enter animation */
-.slide.ng-enter {
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transition: 0.4s linear all;
-  -moz-transition: 0.4s linear all;
-  transition: 0.4s linear all;
-}
-
-/* The finishing CSS styles for the enter animation */
-.slide.ng-enter.ng-enter-active {
-  max-height: 1000px;
-}
-
-/* The starting CSS styles for the leave animation */
-.slide.ng-leave {
-  max-height: 1000px;
-  opacity: 1;
-  overflow: hidden;
-  -webkit-transition: 0.4s linear all;
-  -moz-transition: 0.4s linear all;
-  transition: 0.4s linear all;
-}
-
-.slide.ng-leave.ng-leave-active {
-  max-height: 0;
-  overflow: hidden;
-}
-
 .continent .icon {
-  width: 120px;
-  height: 120px;
+  width: 125px;
+  height: 125px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -70,23 +41,30 @@ body {
 }
 .continent .header {
   height: 16.7vh;
+  line-height: 16.7vh;
   min-height: 160px;
   min-width: 550px;
   color: #FFF;
   font-size: 30px;
-  padding: 20px 0 0 35px;
+  padding: 0 0 0 35px;
   text-transform: uppercase;
 }
 .continent .header:hover {
   cursor: pointer;
 }
+.continent .row .countries-container {
+  margin: 0 auto;
+  width: 80vw;
+}
 .continent .country-container {
-  width: 250px;
+  width: 20vw;
+  min-width: 200px;
+  max-width: 265px;
   display: inline-block;
-  padding: 50px 40px;
+  padding: 50px 60px;
   text-transform: uppercase;
   vertical-align: top;
-  z-index: -5;
+  text-align: left;
 }
 .continent .country-container .country-name {
   position: relative;
@@ -98,6 +76,7 @@ body {
 .continent .country-container .country-name .name {
   position: absolute;
   bottom: 0;
+  left: 0;
 }
 .continent .country-container .country-name:before {
   content: '';
@@ -105,6 +84,7 @@ body {
   width: 40px;
   height: 3px;
   bottom: -5px;
+  left: 0;
 }
 .continent .country-container .count {
   display: block;
@@ -222,21 +202,107 @@ body {
 }
 
 /*------------- MOBILE VIEW -----------------*/
-@media (max-width: 600px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .continent .header {
-    font-size: 1.3em;
-    height: 16.7vh;
-    line-height: 16.7vh;
-    min-height: 100px;
-    padding: 0 0 0 18px;
+    min-height: 0;
+    padding: 0 0 0 35px;
   }
-  .continent .icon {
-    width: 80px;
-    height: 80px;
+  .continent .header .icon {
+    width: 90px;
+    height: 90px;
+  }
+  .continent .row {
+    text-align: left;
+  }
+  .continent .row .countries-container {
+    width: 100vw;
+    padding: 0;
+  }
+  .continent .row .countries-container .country-container {
+    width: 250px;
+  }
+}
+@media only screen and (min-device-width: 960px) and (max-device-width: 1280px) {
+  .continent .header {
+    min-height: 0;
+    padding: 0 0 0 35px;
+  }
+  .continent .header .icon {
+    width: 90px;
+    height: 90px;
+  }
+  .continent .row {
+    text-align: left;
+  }
+  .continent .row .countries-container {
+    width: 100vw;
+  }
+  .continent .row .countries-container .country-container {
+    width: 240px;
+    padding: 50px 20px 60px 50px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .continent .header {
+    min-height: 0;
+    line-height: 16.6vh;
+    padding: 0 0 0 35px;
+    font-size: 2.7em;
+  }
+  .continent .row {
+    text-align: left;
+  }
+  .continent .row .countries-container {
+    width: auto;
   }
   .continent .country-container {
     width: 50%;
-    margin: 0 auto;
-    padding: 40px 40px 40px 25px;
+    min-width: 0;
+    max-width: 500px;
+    padding: 100px 20px 70px 130px;
+  }
+  .continent .country-container .country-name {
+    font-size: 2.4em;
+    margin-bottom: 35px;
+  }
+  .continent .country-container .count {
+    font-size: 2.8em;
+  }
+  .continent .country-container .info {
+    font-size: 1.7em;
+  }
+}
+@media only screen and (min-device-width: 360px) and (max-device-width: 667px) {
+  .continent .header {
+    min-height: 0;
+    line-height: 16.6vh;
+    padding: 0 0 0 35px;
+    font-size: 2.8em;
+  }
+  .continent .header .icon {
+    width: 150px;
+    height: 150px;
+  }
+  .continent .row {
+    text-align: left;
+  }
+  .continent .row .countries-container {
+    width: auto;
+  }
+  .continent .country-container {
+    width: 50%;
+    min-width: 0;
+    max-width: 667px;
+    padding: 120px 10px 80px 130px;
+  }
+  .continent .country-container .country-name {
+    font-size: 2.6em;
+    margin-bottom: 35px;
+  }
+  .continent .country-container .count {
+    font-size: 2.8em;
+  }
+  .continent .country-container .info {
+    font-size: 1.7em;
   }
 }
