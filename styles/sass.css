@@ -251,6 +251,9 @@ body {
     padding: 0 0 0 35px;
     font-size: 2.7em;
   }
+  .continent .header .continent-container {
+    width: 100%;
+  }
   .continent .row {
     text-align: left;
   }
@@ -280,6 +283,9 @@ body {
     line-height: 16.6vh;
     padding: 0 0 0 35px;
     font-size: 2.8em;
+  }
+  .continent .header .continent-container {
+    width: 100%;
   }
   .continent .header .icon {
     width: 150px;
