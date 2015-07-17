@@ -18,9 +18,11 @@
 
     <div class="continent {{ continent.name | dashlower }}" ng-repeat="continent in continents">
       <div class="header" scroll-to="{{ continent.name | dashlower }}" duration="400" easing="easeInOutCubic" id="{{ continent.name | dashlower}}" show-countries>
-        <img ng-src="icons/{{continent.icon_image}}" class="icon"> 
-        <span class="continent-name">{{ continent.name }}</span>
-        <span class="continent-total">{{ continent.countryCount }}</span>
+        <div class="continent-container">
+          <img ng-src="icons/{{continent.icon_image}}" class="icon"> 
+          <span class="continent-name">{{ continent.name }}</span>
+          <span class="continent-total">{{ continent.countryCount }}</span>
+        </div>
       </div>
 
       <div class="countries slide" ng-show="showCountries" ng-init="showCountries = false">

@@ -30,23 +30,6 @@ body {
 
 .continent {
 
-  .icon {
-    width: 125px;
-    height: 125px;
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  .continent-name {
-    letter-spacing: 3px;
-    margin: 0 0 0 10px;
-  }
-
-  .continent-total {
-    font-family: 'Bodoni Poster';
-    margin: 0 0 0 10px;
-  }
-
   .header {
     height: 16.7vh;
     line-height: 16.7vh;
@@ -54,23 +37,44 @@ body {
     min-width: 550px;
     color: #FFF;
     font-size: 30px;
-    padding: 0 0 0 35px;
     text-transform: uppercase;
     &:hover {
       cursor: pointer;
     }
+
+    .continent-container {
+      width: 500px;
+      margin: 0 auto;
+      text-align: left;
+
+      .icon {
+      width: 125px;
+      height: 125px;
+      display: inline-block;
+      vertical-align: middle;
+  }
+
+    .continent-name {
+      letter-spacing: 3px;
+      margin: 0 0 0 10px;
+    }
+
+    .continent-total {
+      font-family: 'Bodoni Poster';
+      margin: 0 0 0 10px;
+    }
+  }
+
   }
 
 .row {
   .countries-container {
     margin: 0 auto;
-    width: 80vw;
+    text-align: center;
   }
 }
   .country-container {
-    width: 20vw;
-    min-width: 200px;
-    max-width: 265px;
+    width: 250px;
     display: inline-block;
     padding: 50px 60px;
     text-transform: uppercase;

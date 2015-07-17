@@ -321,11 +321,12 @@ ircam.controller('ircamController', function($scope, $http, $location, $anchorSc
       var viewportWidth = window.innerWidth;
       var countryWidth = 250;
       // Display of countries across viewport width
-      var displaySize = 2/3;
+      var displaySize = 3/4;
       var maxGroupSize = Math.floor(( displaySize * viewportWidth ) / countryWidth);
-      if (maxGroupSize < 4){
+      if (maxGroupSize > 4){
         maxGroupSize = 4;
       }
+
       // Group the countries into rows
       continentData[continentKey].countriesGrouped = [];
       var groups = continentData[continentKey].countriesGrouped;
